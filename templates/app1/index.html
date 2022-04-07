@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Universities</h1>
+<ul>
+    {% for university in universities %}
+        <li>
+            <a href=" {{ university.get_absolute_url }} ">
+            Name: {{ university.full_name }} | Id: {{ university.id }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>
